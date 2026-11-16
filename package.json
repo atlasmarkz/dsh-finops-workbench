@@ -1,0 +1,39 @@
+{
+  "name": "dsh-finops-workbench",
+  "version": "0.1.0",
+  "description": "经营分析工作台：读入 Excel/CSV 经营数据，自动体检、口径映射、趋势与结构分析，一次导出可编辑的 xlsx 与一页结论 docx。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "engine/finops.py",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "dsh-desktop-workbenches"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atlasmarkz/dsh-finops-workbench.git"
+  },
+  "author": "atlasmarkz",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
