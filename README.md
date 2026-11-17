@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/logo.png" alt="经营分析工作台 logo" width="112" height="112">
+</p>
+
 # 经营分析工作台（dsh-finops-workbench）
 
 把一份 Excel / CSV 经营明细，变成一套**可直接交付**的经营分析：数据体检 → 口径确认 → 趋势 / 结构 / 异常分析 → 可编辑的 xlsx 与一页结论 docx。
@@ -14,6 +18,12 @@
    - `*.xlsx`：概览、趋势、结构、异常、数据体检、口径卡、原始明细，全部使用**原生 Excel 公式**（打开即重算）；
    - `*.docx`：一页结论，含摘要、关键指标、趋势观察、收入结构、异常与建议、口径说明。
 6. **复跑对比**：同一份数据再次生成时，自动与上一次结果对比（营业收入、毛利率、净利润变化）。
+
+## 界面截图
+
+| 首页 · 数据接入 | 分析看板 | 交付文件 |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/01-home.png" alt="首页：选择数据文件与五步流程" width="320"> | <img src="docs/screenshots/02-analysis.png" alt="分析看板：KPI 卡片与内联 SVG 图表" width="320"> | <img src="docs/screenshots/03-deliverables.png" alt="交付文件：可编辑的 xlsx 与 docx" width="320"> |
 
 ## 数据要求
 
