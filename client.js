@@ -572,6 +572,7 @@ window.__ModuleLoader__.load({
         ctx.effect(function () {
           return ctx.desktopWorkbenches.register({
             title: '经营分析',
+            repository: 'https://github.com/atlasmarkz/dsh-finops-workbench',
             description: '读入 Excel / CSV 经营数据，体检口径、分析趋势与结构，导出可编辑 xlsx 与一页结论 docx。',
             customFrame: true,
             headerLayout: 'compact',
